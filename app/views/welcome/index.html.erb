@@ -1,4 +1,22 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3" id="static-welcome">
+        <h1>Out Of Five</h1>
+        <p>Your Ratings Your Way</p>
+        
+        <button class="btn-lg">
+          <%= link_to "Log In", new_user_session_path %>
+        </button>
+        <button class="btn-lg">
+          <%= link_to "Register", new_user_registration_path %>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= image_tag "five-gold-stars.png" %>
+      </div>
+    </div>
+  </div>
+</div>
